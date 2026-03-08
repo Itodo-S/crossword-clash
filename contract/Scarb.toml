@@ -1,0 +1,39 @@
+[package]
+cairo-version = "2.13.1"
+name = "crossword"
+version = "1.8.0"
+edition = "2024_07"
+
+[cairo]
+sierra-replace-ids = true
+
+[scripts]
+migrate = "sozo build && sozo migrate"
+
+[dependencies]
+dojo = "1.8.0"
+starknet = "2.13.1"
+
+[[target.starknet-contract]]
+build-external-contracts = ["dojo::world::world_contract::world"]
+casm = true
+sierra = true
+
+[tool.scarb]
+allow-prebuilt-plugins = ["dojo_cairo_macros"]
+
+[dev-dependencies]
+cairo_test = "2.13.1"
+dojo_cairo_test = "1.8.0"
+
+[tool.dojo.world]
+name = "crossword"
+description = "Crossword Clash game on Starknet"
+cover_uri = "file://assets/cover.png"
+icon_uri = "file://assets/icon.png"
+
+[world]
+name = "crossword"
+seed = "crossword_v2"
+
+[profile.sepolia]

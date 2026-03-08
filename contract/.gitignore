@@ -1,0 +1,6 @@
+# Dojo build artifacts
+target/
+
+# Environment
+.env
+.env.sepolia
