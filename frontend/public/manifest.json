@@ -1,0 +1,26 @@
+{
+  "name": "Crossword Clash — Competitive Word Game on Starknet",
+  "short_name": "Crossword Clash",
+  "description": "A competitive tile-placement word game on Starknet. Place tiles on a crossword board, complete words, outscore your opponent, and earn on-chain achievements.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0c1220",
+  "theme_color": "#0c1220",
+  "categories": ["games", "entertainment"],
+  "icons": [
+    {
+      "src": "/icon-192.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "prefer_related_applications": false
+}
