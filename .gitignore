@@ -1,0 +1,16 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Init script
+init-repo.sh
+
+# Editors
+.vscode/
+.idea/
+*.sw?
+
+# Environment
+.env
+.env.local
+.env.*.local
